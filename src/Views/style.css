@@ -1,0 +1,60 @@
+.appbar {
+  display: flex;
+  height: 10%;
+}
+
+.appbarLogo {
+  width: 15%;
+  border-right: 3px solid silver;
+  border-bottom: 3px solid silver;
+  justify-content: center;
+  display: flex;
+}
+
+.appbarTile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: deepskyblue;
+  font-family: cursive;
+  width: 85%;
+  border-bottom: 3px solid silver;
+}
+.navbar {
+  width: 15%;
+  border-right: 3px solid silver;
+}
+
+.navitems {
+  height: 5%;
+  border-bottom: 3px solid silver;
+}
+.navlink{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    color: deepskyblue;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.navitems.selected{
+    background-color: darkslategray;
+}
+.navitems:hover{
+    background-color: gray;
+    opacity: 70%;
+}
+
+.maincontent {
+  background-color: white;
+  width: 85%;
+  overflow: scroll
+}
+.logo{
+    height: 90px;
+    pointer-events: none;
+}
