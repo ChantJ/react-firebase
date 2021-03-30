@@ -63,9 +63,18 @@ const RealtimeDatabae = () => {
     return children;
   };
   const onSubmit = async () => {
-    var nest = getNestedChildren(children, null);
-    let [first] = Object.keys(nest);
-    let payload = await addData(first, nest[Object.keys(nest)[0]]);
+    let payload={}
+    if(children[0].childrenNum===0){
+      let obj={}
+      obj[children[0].name]=children[0].value
+      payload = await updateData( obj,"/");
+
+    }
+    else{
+      var nest = getNestedChildren(children, null);
+      let [first] = Object.keys(nest);
+      payload = await addData(first, nest[Object.keys(nest)[0]]);
+    }
     setId(0);
     setChildren([]);
     dispatch({ type: "add", payload: payload.data });
