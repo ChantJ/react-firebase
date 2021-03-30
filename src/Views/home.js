@@ -25,8 +25,8 @@ const Home = () => {
           editing and deleting them.
         </div>
         <div style={{ margin: "5rem", display:"flex", justifyContent:"center" }}>
-          <img src={logo} alt="react" style={{ width: "40%" }} />
-          <img src={firebase} alt="firebase" style={{ width: "40%" }} />
+          <img src={logo} alt="react" className="logo" />
+          <img src={firebase} alt="firebase" className="logo"/>
         </div>
       </div>
     </div>
