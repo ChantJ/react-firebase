@@ -46,7 +46,7 @@
 }
 .navitems:hover{
     background-color: gray;
-    opacity: 90%;
+    opacity: 90% !important;
 }
 
 .maincontent {
